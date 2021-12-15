@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_4sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userIV"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_chat_user_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="@dimen/_12sdp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageTV"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_background_pink_100"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:padding="@dimen/_15sdp"
+        android:text="Flying to Italy on 24th of this month."
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/userIV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

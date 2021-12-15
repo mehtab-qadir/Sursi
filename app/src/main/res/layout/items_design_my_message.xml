@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_4sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/messageTV"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="Flying to Italy on 24th of this month."
+        android:background="@drawable/rounded_corner_background_brown"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
