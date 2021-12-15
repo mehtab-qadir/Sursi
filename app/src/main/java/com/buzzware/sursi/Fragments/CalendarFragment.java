@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
+import com.buzzware.sursi.Adapters.DoctorListAdapter;
 import com.buzzware.sursi.databinding.FragmentCalendarBinding;
 import com.buzzware.sursi.databinding.FragmentHomeBinding;
 
@@ -26,6 +28,11 @@ public class CalendarFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull @org.jetbrains.annotations.NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         binding = FragmentCalendarBinding.inflate(inflater, container, false);
+
+        binding.includeAppBar.titleTV.setText("Calendar");
+
+        binding.homeRV.setLayoutManager(new LinearLayoutManager(getActivity()));
+        binding.homeRV.setAdapter(new DoctorListAdapter(getActivity(), null));
 
         return  binding.getRoot();
     }

@@ -42,6 +42,7 @@
         app:layout_constraintWidth_percent="0.45" />
 
     <View
+        android:id="@+id/inboxLine"
         android:layout_width="0dp"
         android:layout_height="@dimen/_1sdp"
         android:background="@color/blue"
@@ -51,7 +52,6 @@
         app:layout_constraintWidth_percent="0.3" />
 
     <View
-        android:id="@+id/inboxLine"
         android:layout_width="@dimen/_1sdp"
         android:layout_height="@dimen/_25sdp"
         android:background="@color/white"

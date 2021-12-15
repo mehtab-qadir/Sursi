@@ -62,7 +62,7 @@ public class CommunityFragment extends Fragment {
 
         binding.appBarView.titleTV.setText("Community");
         binding.appBarView.backIV.setImageResource(R.drawable.back_icon);
-        binding.appBarView.backIV.setVisibility(View.VISIBLE);
+        binding.appBarView.backIV.setVisibility(View.INVISIBLE);
         binding.appBarView.menuIV.setVisibility(View.INVISIBLE);
 
     }

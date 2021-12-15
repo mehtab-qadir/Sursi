@@ -1,5 +1,6 @@
 package com.buzzware.sursi.Activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +19,16 @@ public class ScheduleAppointment extends AppCompatActivity {
         binding = ActivityScheduleAppointmentBinding.inflate(getLayoutInflater());
 
         setContentView(binding.getRoot());
+
+        binding.addBt.setOnClickListener(view -> moveToHandsOn());
+
+    }
+
+    private void moveToHandsOn() {
+
+        startActivity(new Intent(this, HandSurgery.class));
+
+        finish();
 
     }
 

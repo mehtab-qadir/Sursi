@@ -29,12 +29,12 @@
 
 
     <ImageView
-        android:visibility="invisible"
+        android:visibility="visible"
         android:background="@null"
         android:layout_width="@dimen/_40sdp"
         android:padding="@dimen/_12sdp"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_back"/>
+        android:src="@drawable/cloud_icon"/>
 
 
 </LinearLayout>

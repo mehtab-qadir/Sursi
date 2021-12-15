@@ -12,11 +12,15 @@
         <activity
             android:name=".Activities.EGuideDetailActivity"
             android:exported="true" />
+        <activity android:name=".Activities.HandSurgery"
+            android:exported="true"/>
+        <activity android:name=".Activities.ScheduleAppointment"
+            android:exported="true"/>
         <activity
             android:name=".Activities.ThreadDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.ConversationActivity"
+            android:name=".Activities.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activities.HomeActivity"
+            android:name=".Activities.ConversationActivity"
             android:exported="true" />
     </application>
 

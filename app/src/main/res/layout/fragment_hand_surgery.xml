@@ -6,7 +6,8 @@
     android:background="@color/pink_200"
     android:orientation="vertical">
 
-    <include layout="@layout/simple_app_bar" />
+    <include layout="@layout/back_app_bar" />
+
 
     <ScrollView
         android:layout_weight="1"

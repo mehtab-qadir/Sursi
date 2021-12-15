@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.buzzware.sursi.Fragments.CalendarFragment;
+import com.buzzware.sursi.Fragments.CommunityFragment;
+import com.buzzware.sursi.Fragments.EGuidesFragment;
 import com.buzzware.sursi.Fragments.HomeFragment;
 import com.buzzware.sursi.R;
 import com.buzzware.sursi.databinding.ActivityHomeBinding;
@@ -27,6 +29,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.bottomNav.setOnNavigationItemSelectedListener(item -> onNavItemSelected(item));
+
+        setFragment(new HomeFragment());
 
     }
 
@@ -47,11 +51,13 @@ public class HomeActivity extends AppCompatActivity {
 
             case R.id.bookItem:
 
-                setFragment(new HomeFragment());
+                setFragment(new EGuidesFragment());
 
                 break;
 
             case R.id.diamondItem:
+
+                setFragment(new CommunityFragment());
 
                 break;
 

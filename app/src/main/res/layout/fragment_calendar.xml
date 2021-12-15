@@ -4,9 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink_200"
+
     android:orientation="vertical">
 
-    <include layout="@layout/simple_app_bar" />
+    <include layout="@layout/simple_app_bar"
+        android:id="@+id/includeAppBar"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,6 +22,7 @@
             android:orientation="vertical">
 
             <CalendarView
+                android:background="@drawable/rounded_corner_background_pink_100"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -27,6 +30,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/homeRV"
                 android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_50sdp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:nestedScrollingEnabled="false" />
