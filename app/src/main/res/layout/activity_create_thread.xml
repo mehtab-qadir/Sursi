@@ -137,13 +137,13 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/loginBT"
+        android:id="@+id/postBt"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginTop="@dimen/_16sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_marginBottom="@dimen/_30sdp"
-        android:text="LOG IN"
+        android:text="POST"
         app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
         android:textColor="@color/white"

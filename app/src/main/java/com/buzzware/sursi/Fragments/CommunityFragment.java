@@ -1,5 +1,6 @@
 package com.buzzware.sursi.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.buzzware.sursi.Activities.CreateThreadActivity;
 import com.buzzware.sursi.Adapters.ThreadListAdapter;
 import com.buzzware.sursi.Adapters.UserListAdapter;
 import com.buzzware.sursi.R;
@@ -53,6 +55,12 @@ public class CommunityFragment extends Fragment {
             binding.threadLine.setVisibility(View.VISIBLE);
             binding.createThreadBtn.setVisibility(View.VISIBLE);
             setThreadList();
+
+        });
+
+        binding.createThreadBtn.setOnClickListener(v -> {
+
+          startActivity(new Intent(getActivity(), CreateThreadActivity.class));
 
         });
 

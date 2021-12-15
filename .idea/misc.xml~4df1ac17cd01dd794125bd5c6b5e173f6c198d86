@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/left_rounded_corner_background_brown.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/right_rounded_corner_background_orange.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/rounded_background_blue.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/rounded_corner_background_brown.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/rounded_corner_background_pink_100.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/rounded_corner_background_pink_200.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/drawable/rounded_corner_background_white.xml" value="0.2890625" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/activity_cascscca.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/activity_conversation.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/activity_eguide_detail.xml" value="0.25885416666666666" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/activity_thread_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/app_bar.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/fragment_community.xml" value="0.25885416666666666" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/fragment_e_guides.xml" value="0.25885416666666666" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/item_design_conversation.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/items_design_doctor_list.xml" value="0.33" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/items_design_my_message.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/items_design_other_message.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/items_design_thread_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/items_design_user_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/rounded_corner_background_pink_100.xml" value="0.27291666666666664" />
+        <entry key="..\:/Buzzware/Sursi/app/src/main/res/layout/upload_bottom_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/mehta/AndroidStudioProjects/Sursi/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

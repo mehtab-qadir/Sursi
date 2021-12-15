@@ -24,6 +24,12 @@ public class RegistrationActivity extends AppCompatActivity {
     private void setListeners() {
 
         binding.loginBT.setOnClickListener(view -> {
+            startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
+
+
+        });
+
+        binding.newUserTV.setOnClickListener(view -> {
             startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
         });
 

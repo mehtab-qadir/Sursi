@@ -12,6 +12,7 @@ import com.buzzware.sursi.Fragments.CalendarFragment;
 import com.buzzware.sursi.Fragments.CommunityFragment;
 import com.buzzware.sursi.Fragments.EGuidesFragment;
 import com.buzzware.sursi.Fragments.HomeFragment;
+import com.buzzware.sursi.Fragments.ProfileFragment;
 import com.buzzware.sursi.R;
 import com.buzzware.sursi.databinding.ActivityHomeBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -69,6 +70,8 @@ public class HomeActivity extends AppCompatActivity {
                 break;
 
             case R.id.profileItem:
+
+                setFragment(new ProfileFragment());
 
                 break;
 

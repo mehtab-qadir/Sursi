@@ -37,6 +37,8 @@ public class CreateThreadActivity extends AppCompatActivity {
 
     private void setListeners() {
 
+        binding.postBt.setOnClickListener(view -> finish());
+
         binding.includeView.backIV.setOnClickListener(view -> {
            finish();
         });

@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private void setListeners() {
 
         binding.loginBT.setOnClickListener(view -> {
-            startActivity(new Intent(LoginActivity.this, CreateThreadActivity.class));
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
         });
 
         binding.newUserTV.setOnClickListener(view -> {
