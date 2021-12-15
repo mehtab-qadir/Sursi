@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Sursi</string>
+    <string name="reserch_and_prepare_for_cosmetic_surgery">reserch and prepare /n for cosmetic surgery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
