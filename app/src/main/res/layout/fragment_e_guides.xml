@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_200">
+    <include
+        android:id="@+id/appBarView"
+        layout="@layout/app_bar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/appBarView"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image1IV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_eguieds_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48"
+            app:riv_corner_radius="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/play_icon"
+            app:layout_constraintStart_toStartOf="@id/image1IV"
+            app:layout_constraintTop_toTopOf="@id/image1IV"
+            app:layout_constraintBottom_toBottomOf="@id/image1IV"
+            app:layout_constraintEnd_toEndOf="@id/image1IV"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/handSurgeryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Hand Surgery"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image1IV" />
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image2IV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_eguieds_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.48"
+            app:riv_corner_radius="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/play_icon"
+            app:layout_constraintStart_toStartOf="@id/image2IV"
+            app:layout_constraintTop_toTopOf="@id/image2IV"
+            app:layout_constraintBottom_toBottomOf="@id/image2IV"
+            app:layout_constraintEnd_toEndOf="@id/image2IV"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/faceSurgeryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Face Surgery"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/image2IV"
+            app:layout_constraintTop_toBottomOf="@id/image2IV" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image3IV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_eguieds_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/handSurgeryTV"
+            app:layout_constraintWidth_percent="0.48"
+            app:riv_corner_radius="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/play_icon"
+            app:layout_constraintStart_toStartOf="@id/image3IV"
+            app:layout_constraintTop_toTopOf="@id/image3IV"
+            app:layout_constraintBottom_toBottomOf="@id/image3IV"
+            app:layout_constraintEnd_toEndOf="@id/image3IV"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/skinProcedureTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Skin Procedure"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/image3IV"
+            app:layout_constraintTop_toBottomOf="@id/image3IV" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image4IV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dummy_eguieds_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/faceSurgeryTV"
+            app:layout_constraintWidth_percent="0.48"
+            app:riv_corner_radius="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/play_icon"
+            app:layout_constraintStart_toStartOf="@id/image4IV"
+            app:layout_constraintTop_toTopOf="@id/image4IV"
+            app:layout_constraintBottom_toBottomOf="@id/image4IV"
+            app:layout_constraintEnd_toEndOf="@id/image4IV"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/legSurgeryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Leg Surgery"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/image4IV"
+            app:layout_constraintTop_toBottomOf="@id/image4IV" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

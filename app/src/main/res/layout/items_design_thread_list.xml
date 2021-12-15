@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_10sdp"
-    android:background="@drawable/rounded_corner_background_pink_100">
+    android:background="@drawable/less_rounded_corner_background_pink_100">
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/threadIV"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_100sdp"
+        android:layout_height="@dimen/_150sdp"
         android:scaleType="centerCrop"
-        android:src="@drawable/dummy_user_image"
+        android:src="@drawable/dummy_thread_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:riv_corner_radius_top_left="@dimen/_15sdp"
@@ -20,9 +20,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_180sdp"
-        app:layout_constraintTop_toBottomOf="@id/threadIV"
-        android:padding="@dimen/_10sdp">
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/threadIV">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/typeTV"
@@ -31,61 +31,145 @@
             android:layout_marginStart="@dimen/_8sdp"
             android:fontFamily="@font/poppins_medium"
             android:maxLines="1"
-            android:text="Dr. Christine Michel"
+            android:text="Hand Surgery"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="@dimen/_14ssp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dateTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Wed,February 11,2021"
+            android:textAlignment="textStart"
+            android:textColor="@color/gray_200"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/typeTV" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/descriptionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="3"
+            android:text="Lorem ipsum dolor sit amet, cons is ecteturs dipiscing elit, sed to do eiusmod tempor of ncididunt ut laore et it is very dolore magna aliqua."
+            android:textAlignment="textStart"
+            android:textColor="@color/gray_100"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateTV" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTV" />
+
+        <LinearLayout
+            android:id="@+id/likeLL"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/commentLL"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineView"
+            app:layout_constraintWidth_percent="0.3">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/like_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Like"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commentLL"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toStartOf="@+id/shareLL"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/likeLL"
+            app:layout_constraintTop_toBottomOf="@id/lineView"
+            app:layout_constraintWidth_percent="0.3">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/comment_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Comment"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareLL"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/commentLL"
+            app:layout_constraintTop_toBottomOf="@id/lineView"
+            app:layout_constraintWidth_percent="0.3">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/share_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Share"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/userTypeTV"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:fontFamily="@font/poppins_medium"
-        android:maxLines="1"
-        android:text="Hand Surgery"
-        android:textAlignment="textStart"
-        android:textColor="@color/gray_100"
-        android:textSize="@dimen/_12ssp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/doctorIV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/doctorIV"
-        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
 
-    <ImageView
-        android:id="@+id/clockIV"
-        android:layout_width="@dimen/_45sdp"
-        android:layout_height="@dimen/_45sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:background="@drawable/left_rounded_corner_background_brown"
-        android:padding="@dimen/_15sdp"
-        android:src="@drawable/clock_icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/doctorIV" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/remainingDayTV"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_45sdp"
-        android:background="@drawable/right_rounded_corner_background_orange"
-        android:fontFamily="@font/poppins_medium"
-        android:gravity="center"
-        android:maxLines="1"
-        android:text="45 Days Left"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14ssp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="@+id/clockIV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clockIV"
-        app:layout_constraintTop_toTopOf="@id/clockIV" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
