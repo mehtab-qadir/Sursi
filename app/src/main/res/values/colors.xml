@@ -9,10 +9,10 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#FFBB56</color>
+    <color name="orange">#34499A</color>
     <color name="orange_popup_background">#77FFBB56</color>
-    <color name="pink_100">#ECDACA</color>
-    <color name="pink_200">#FFF2E6</color>
+    <color name="pink_100">#EFEFEF</color>
+    <color name="pink_200">#FFFFFF</color>
     <color name="brown">#DC8D66</color>
     <color name="blue">#34499A</color>
     <color name="gray_100">#A5A5A5</color>

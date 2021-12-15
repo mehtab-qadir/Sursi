@@ -72,7 +72,7 @@
         android:fontFamily="@font/poppins_medium"
         android:maxLines="1"
         android:text="45 Days Left"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:gravity="center"
         android:textSize="@dimen/_14ssp"
         android:visibility="visible"
