@@ -25,7 +25,7 @@
         android:layout_marginLeft="@dimen/_10ssp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corner_background_pink_100"
+        android:background="@drawable/less_rounded_corner_background_pink_100"
         android:fontFamily="@font/poppins_medium"
         android:maxLines="1"
         android:padding="@dimen/_15sdp"
