@@ -9,8 +9,9 @@
     <include layout="@layout/simple_app_bar" />
 
     <ScrollView
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp">
 
 
         <LinearLayout
@@ -25,64 +26,74 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/poppins_bold"
-                android:text="@string/welcome"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_15ssp" />
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/gray_100"
+                android:textSize="@dimen/_10ssp" />
+
+            <include layout="@layout/item_doctor_list_2"
+                android:id="@+id/includeDoctorList"/>
 
             <TextView
-                android:id="@+id/usernameTV"
+                android:id="@+id/daysTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins_medium"
                 android:maxLines="1"
-                android:text="Mati"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12ssp" />
-
-            <EditText
-                android:id="@+id/searchET"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/rounded_corner_background_pink_2"
-                android:drawableEnd="@drawable/ic_search"
-                android:hint="@string/search_a_procedure"
-                android:paddingStart="@dimen/_10sdp"
-                android:paddingEnd="@dimen/_10sdp"
-                android:textColor="@color/gray_200"
-                android:textColorHint="@color/gray_200" />
-
-            <TextView
-                android:id="@+id/usernameTV2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:ellipsize="end"
-                android:fontFamily="@font/poppins_medium"
-                android:maxLines="1"
-                android:text="Surgical Procedures"
+                android:text="Day 1"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12ssp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/homeRV"
+                android:id="@+id/day1RV"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
                 android:nestedScrollingEnabled="false" />
 
-            <androidx.appcompat.widget.AppCompatButton
+            <include layout="@layout/include_horizontal_images_placeholder"/>
+
+
+            <TextView
+                android:id="@+id/days2TV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:background="@drawable/curved_blue"
-                android:text="Schedule Appointment"
-                android:textColor="@color/white" />
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_medium"
+                android:maxLines="1"
+                android:text="Day 2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/day2RV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false" />
+
+            <include layout="@layout/include_horizontal_images_placeholder"/>
 
 
         </LinearLayout>
     </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBt"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/curved_blue"
+        android:text="upload day 3 images"
+        android:textColor="@color/white" />
+
+
 </LinearLayout>

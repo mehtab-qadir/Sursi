@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sursi</string>
+    <string name="welcome">Welcome</string>
+    <string name="search_a_procedure">Search a procedure</string>
+    <string name="set_date">Set Date</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, cons is ecteturs dipiscing elit, sed to do eiusmod tempor of ncididunt ut laore et it is very dolore magna aliqua. Quis ipsum uspendisse it is very good and very more...</string>
 </resources>

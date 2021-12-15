@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:padding="@dimen/_15sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/doctorIV"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dummy_doctor_image"
+        app:civ_border_color="@color/orange"
+        app:civ_border_width="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="@dimen/_12sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="Dr. Christine Michel"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/userTypeTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doctorIV"
+        app:layout_constraintTop_toTopOf="@+id/doctorIV"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userTypeTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="Hand Surgery"
+        android:textAlignment="textStart"
+        android:textColor="@color/gray_100"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/doctorIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/doctorIV"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+    <ImageView
+        android:id="@+id/clockIV"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/left_rounded_corner_background_brown"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/clock_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doctorIV" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/remainingDayTV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:maxLines="1"
+        android:text="45 Days Left"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="visible"
+        android:background="@drawable/right_rounded_corner_background_orange"
+        app:layout_constraintBottom_toBottomOf="@+id/clockIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clockIV"
+        app:layout_constraintTop_toTopOf="@id/clockIV"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
