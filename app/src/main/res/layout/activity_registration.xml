@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RegistrationActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newUserTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Already Have a Profile? Sign in Now"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/LoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:fontFamily="@font/poppins_bold"
+        android:textColor="@color/orange"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Registration"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/rounded_background_pink100"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/newUserTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+
+        <EditText
+            android:id="@+id/enterNameET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="Enter Name"
+            android:singleLine="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/rounded_background_pink200" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+
+        <EditText
+            android:id="@+id/enterEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="Enter Email"
+            android:singleLine="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/rounded_background_pink200"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+
+        <EditText
+            android:id="@+id/enterPhoneET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="Enter Phone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/rounded_background_pink200"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            />
+
+        <EditText
+            android:id="@+id/enterPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:hint="Enter Password"
+            android:singleLine="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/rounded_background_pink200"/>
+
+        <TextView
+            android:id="@+id/loginBT"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:text="register now"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/rounded_background_blue"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
