@@ -14,8 +14,9 @@
 
         <ImageView
             android:layout_width="@dimen/_40sdp"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_13sdp"
+            android:tint="@color/white"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_9sdp"
             android:src="@drawable/ic_back" />
 
         <TextView
@@ -28,7 +29,7 @@
             android:fontFamily="@font/poppins_bold"
             android:gravity="center"
             android:maxLines="1"
-            android:text="Schedule Appointment"
+            android:text="Create New Tab"
             android:textColor="@color/white"
             android:textSize="@dimen/_15ssp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -42,23 +43,6 @@
             android:src="@drawable/ic_back"
             android:visibility="invisible" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/dateTV"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:layout_weight="1"
-        android:fontFamily="@font/poppins_bold"
-        android:gravity="center|top"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:maxLines="1"
-        android:text="Wed, February 11, 2021"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_12ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </LinearLayout>

@@ -32,7 +32,7 @@
                 android:textColor="@color/gray_100"
                 android:textSize="@dimen/_10ssp" />
 
-            <include layout="@layout/item_doctor_list_2"
+            <include layout="@layout/item_doctor_list_3"
                 android:id="@+id/includeDoctorList"/>
 
             <TextView
@@ -80,9 +80,19 @@
 
             <include layout="@layout/include_horizontal_images_placeholder"/>
 
-
         </LinearLayout>
     </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/rounded_corner_background_pink_100"
+        android:text="Upload Files"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

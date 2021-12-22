@@ -25,7 +25,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/pink_100"
+        android:background="@color/yellowDark"
         android:visibility="invisible"
         android:id="@+id/backgroundRectangleView"/>
 
@@ -39,7 +39,7 @@
         android:maxLines="1"
         android:text="10:00AM"
         android:id="@+id/titleTV"
-        android:textColor="@color/gray_100"
+        android:textColor="@color/white"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -12,6 +12,7 @@ import com.buzzware.sursi.Fragments.CalendarFragment;
 import com.buzzware.sursi.Fragments.CommunityFragment;
 import com.buzzware.sursi.Fragments.EGuidesFragment;
 import com.buzzware.sursi.Fragments.HomeFragment;
+import com.buzzware.sursi.Fragments.NotificationsFragment;
 import com.buzzware.sursi.Fragments.ProfileFragment;
 import com.buzzware.sursi.R;
 import com.buzzware.sursi.databinding.ActivityHomeBinding;
@@ -74,6 +75,12 @@ public class HomeActivity extends AppCompatActivity {
                 setFragment(new ProfileFragment());
 
                 break;
+
+//            case R.id.notificationsItem:
+//
+//                setFragment(new NotificationsFragment());
+//
+//                break;
 
 
         }

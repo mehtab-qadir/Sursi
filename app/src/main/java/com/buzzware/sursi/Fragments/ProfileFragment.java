@@ -1,14 +1,15 @@
 package com.buzzware.sursi.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.buzzware.sursi.R;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
+import com.buzzware.sursi.Adapters.ThreadListAdapter;
 import com.buzzware.sursi.databinding.FragmentProfileBinding;
 
 public class ProfileFragment extends Fragment {
@@ -26,8 +27,23 @@ public class ProfileFragment extends Fragment {
         binding = FragmentProfileBinding.inflate(inflater, container, false);
 
         setViews();
+
         setListeners();
-        
+
+        binding.includeView.menuIV.setVisibility(View.VISIBLE);
+        binding.includeView.menuIV.setOnClickListener(view -> {
+
+            startActivity(new Intent(getActivity(), NotificationsFragment.class));
+
+        });
+
+        binding.homeRV.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        ThreadListAdapter threadListAdapter = new ThreadListAdapter(getContext(), null, true);
+
+        binding.homeRV.setAdapter(threadListAdapter);
+
+
         return binding.getRoot();
     }
 

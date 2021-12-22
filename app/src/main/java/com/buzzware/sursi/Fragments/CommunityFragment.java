@@ -28,6 +28,9 @@ public class CommunityFragment extends Fragment {
         binding = FragmentCommunityBinding.inflate(inflater);
 
         setView();
+
+        binding.searchET.setVisibility(View.GONE);
+
         setListener();
         setUserList();
 
@@ -44,11 +47,12 @@ public class CommunityFragment extends Fragment {
             binding.threadLine.setVisibility(View.INVISIBLE);
             binding.createThreadBtn.setVisibility(View.INVISIBLE);
             setUserList();
+            binding.searchET.setVisibility(View.GONE);
 
         });
 
         binding.threadBtn.setOnClickListener(v -> {
-
+            binding.searchET.setVisibility(View.VISIBLE);
             binding.inboxBtn.setTextColor(getResources().getColor(R.color.black));
             binding.threadBtn.setTextColor(getResources().getColor(R.color.blue));
             binding.inboxLine.setVisibility(View.INVISIBLE);
@@ -90,7 +94,7 @@ public class CommunityFragment extends Fragment {
 
         binding.mainRV.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        ThreadListAdapter threadListAdapter = new ThreadListAdapter(getContext(), null);
+        ThreadListAdapter threadListAdapter = new ThreadListAdapter(getContext(), null, false);
 
         binding.mainRV.setAdapter(threadListAdapter);
 

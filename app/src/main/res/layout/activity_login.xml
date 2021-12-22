@@ -28,7 +28,7 @@
         android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         app:fontFamily="@font/poppins_bold"
-        android:textColor="@color/orange"
+        android:textColor="@color/black"
         android:layout_marginBottom="@dimen/_20sdp"
         app:layout_constraintBottom_toTopOf="@+id/layout"
         app:layout_constraintStart_toStartOf="parent"

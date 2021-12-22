@@ -3,6 +3,7 @@ package com.buzzware.sursi.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -14,7 +15,7 @@ import com.buzzware.sursi.databinding.ItemsDesignUserListBinding;
 
 import java.util.List;
 
-public class DoctorListAdapter extends RecyclerView.Adapter<DoctorListAdapter.ViewHolder>  {
+public class DoctorListAdapter extends RecyclerView.Adapter<DoctorListAdapter.ViewHolder> {
 
     private List<String> list;
     private Context context;
@@ -34,19 +35,27 @@ public class DoctorListAdapter extends RecyclerView.Adapter<DoctorListAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
-        viewHolder.binding.mainLayout.setOnClickListener(v->
+        viewHolder.binding.mainLayout.setOnClickListener(v ->
                 context.startActivity(new Intent(context, ConversationActivity.class)));
+
+        viewHolder.binding.userTypeTV.setVisibility(View.GONE);
+
+        if (i == 0||i==3) {
+            viewHolder.binding.userTypeTV.setVisibility(View.VISIBLE);
+            viewHolder.binding.nameTV.setText("Mati");
+
+        }
 
     }
 
 
     @Override
     public int getItemCount() {
-    //    return list.size();
+        //    return list.size();
         return 6;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         ItemsDesignDoctorListBinding binding;
 

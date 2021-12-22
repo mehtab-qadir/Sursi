@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.ProfileFragment">
 
     <include
@@ -29,138 +29,142 @@
         android:src="@drawable/calendar_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/viewTop"/>
+        app:layout_constraintTop_toTopOf="@id/viewTop" />
 
     <TextView
         android:id="@+id/userstatusTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Jone Smith"
         android:fontFamily="@font/poppins_regular"
+        android:text="Jone Smith"
         android:textAllCaps="true"
-        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileIV" />
 
-    <TextView
-        android:id="@+id/userNameTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_2sdp"
-        android:text="28 room night booked"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_10sdp"
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/pink_200"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userstatusTV" />
+        app:layout_constraintTop_toBottomOf="@+id/viewTop">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:id="@+id/layout"
-        android:layout_width="0dp"
-        android:background="@color/pink_200"
-        app:layout_constraintTop_toBottomOf="@+id/viewTop"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
-
-        <EditText
-            android:id="@+id/titleET"
+        <LinearLayout
+            android:id="@+id/layout"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="Jone Smith"
-            android:singleLine="true"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular" />
+            android:layout_height="0dp"
+            android:background="@color/pink_200"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTop">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/emailET"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="Omit3772@gmail.com"
-            android:singleLine="true"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular" />
+            <EditText
+                android:id="@+id/titleET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Jone Smith"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phone"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:inputType="number"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/phoneET"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="+880 1760-007083"
-            android:singleLine="true"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular" />
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Omit3772@gmail.com"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date of Birth"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:inputType="number"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/dobET"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="25/05/1978"
-            android:singleLine="true"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular" />
+            <EditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="+880 1760-007083"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Date of Birth"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/dobET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="25/05/1978"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeRV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

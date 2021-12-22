@@ -18,4 +18,6 @@
     <color name="gray_100">#A5A5A5</color>
     <color name="gray_200">#424F3D</color>
 
+    <color name="yellowLight">#FD9C5F</color>
+    <color name="yellowDark">#DA8D5F</color>
 </resources>

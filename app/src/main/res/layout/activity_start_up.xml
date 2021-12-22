@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
+    android:background="@drawable/bg"
     tools:context=".Activities.StartUpActivity">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -17,7 +17,7 @@
         android:textSize="@dimen/_14ssp"
         android:textAllCaps="true"
         android:fontFamily="@font/poppins_regular"
-        android:background="@drawable/rounded_background_blue"
+        android:background="@drawable/rounded_background_yellow_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

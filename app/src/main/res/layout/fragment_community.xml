@@ -51,14 +51,15 @@
         app:layout_constraintTop_toBottomOf="@id/inboxBtn"
         app:layout_constraintWidth_percent="0.3" />
 
-    <View
-        android:layout_width="@dimen/_1sdp"
-        android:layout_height="@dimen/_25sdp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/tabView"
-        app:layout_constraintEnd_toStartOf="@id/threadBtn"
-        app:layout_constraintStart_toEndOf="@id/inboxBtn"
-        app:layout_constraintTop_toTopOf="@id/tabView" />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/tabView"
+            app:layout_constraintEnd_toStartOf="@id/threadBtn"
+            app:layout_constraintStart_toEndOf="@id/inboxBtn"
+            app:layout_constraintTop_toTopOf="@id/tabView" />
 
     <TextView
         android:id="@+id/threadBtn"
@@ -86,13 +87,30 @@
         app:layout_constraintTop_toBottomOf="@id/threadBtn"
         app:layout_constraintWidth_percent="0.3" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="@dimen/_10sdp"
-        android:id="@+id/mainRV"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/tabView"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <EditText
+            android:id="@+id/searchET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/rounded_corner_background_pink_2"
+            android:drawableEnd="@drawable/ic_search"
+            android:hint="@string/search_threads"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/gray_200"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColorHint="@color/gray_200"
+            app:layout_constraintTop_toBottomOf="@+id/tabView"
+            tools:layout_editor_absoluteX="26dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainRV"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchET"
+            tools:layout_editor_absoluteX="26dp" />
 
     <TextView
         android:visibility="invisible"

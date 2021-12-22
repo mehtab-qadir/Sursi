@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.buzzware.sursi.Activities.ConversationActivity;
+import com.buzzware.sursi.Activities.CreateThreadActivity;
+import com.buzzware.sursi.Activities.EditThread;
 import com.buzzware.sursi.Activities.ThreadDetailActivity;
 import com.buzzware.sursi.databinding.ItemsDesignThreadListBinding;
-import com.buzzware.sursi.databinding.ItemsDesignUserListBinding;
 
 import java.util.List;
 
@@ -19,10 +19,13 @@ public class ThreadListAdapter extends RecyclerView.Adapter<ThreadListAdapter.Vi
 
     private List<String> list;
     private Context context;
+    Boolean fromHome;
 
-    public ThreadListAdapter(Context mContext, List<String> list) {
+    public ThreadListAdapter(Context mContext, List<String> list, boolean fromHome) {
         this.list = list;
         this.context = mContext;
+        this.fromHome = fromHome;
+
     }
 
     @NonNull
@@ -35,10 +38,16 @@ public class ThreadListAdapter extends RecyclerView.Adapter<ThreadListAdapter.Vi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
-        viewHolder.binding.mainLayout.setOnClickListener(v->
-                context.startActivity(new Intent(context, ThreadDetailActivity.class)));
+        if(!fromHome) {
+            viewHolder.binding.mainLayout.setOnClickListener(v ->
+                    context.startActivity(new Intent(context, ThreadDetailActivity.class)));
+        }
+        else {
 
+            viewHolder.binding.mainLayout.setOnClickListener(v ->
+                    context.startActivity(new Intent(context, EditThread.class)));
 
+        }
     }
 
 

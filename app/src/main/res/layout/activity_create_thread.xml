@@ -14,128 +14,205 @@
         android:layout_height="?actionBarSize"
         android:layout_alignParentTop="true" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:id="@+id/layout"
-        android:layout_width="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/includeView"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="@dimen/_6sdp"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/postBt"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/includeView">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Title"
-            android:textColor="@color/black"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
-
-        <EditText
-            android:id="@+id/titleET"
+        <LinearLayout
+            android:id="@+id/layout"
+            android:paddingBottom="@dimen/_30sdp"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="Enter Phone or Email"
-            android:singleLine="true"
-            android:paddingStart="@dimen/_16sdp"
-            android:paddingEnd="@dimen/_16sdp"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@drawable/rounded_background_pink100" />
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            android:layout_marginHorizontal="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/includeView">
 
-        <EditText
-            android:id="@+id/dateET"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:drawableRight="@drawable/calendar_icon"
-            android:drawablePadding="10dp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="Enter Password"
-            android:singleLine="true"
-            android:paddingStart="@dimen/_16sdp"
-            android:paddingEnd="@dimen/_16sdp"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@drawable/rounded_background_pink100"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            <EditText
+                android:id="@+id/titleET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_pink100"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type here"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/descriptionET"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_120sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:hint="Type here"
-            android:gravity="start"
-            android:paddingVertical="@dimen/_10sdp"
-            android:singleLine="true"
-            android:paddingStart="@dimen/_16sdp"
-            android:paddingEnd="@dimen/_16sdp"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@drawable/rounded_background_description"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Doctor"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Upload Image"
-            android:fontFamily="@font/poppins_regular"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            />
+            <EditText
+                android:id="@+id/doctorET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_pink100"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type here"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/uplodTV"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:text="Tap to upload"
-            android:gravity="center"
-            android:textAllCaps="true"
-            android:singleLine="true"
-            android:paddingStart="@dimen/_16sdp"
-            android:paddingEnd="@dimen/_16sdp"
-            android:textSize="@dimen/_13ssp"
-            android:fontFamily="@font/poppins_regular"
-            android:background="@drawable/rounded_background_pink100"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Surgery"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_pink100"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type here"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/descriptionET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_description"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:hint="Type here"
+                android:paddingVertical="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Private" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Public" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Upload Image"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uplodTV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_pink100"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="Tap to upload"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Upload Video"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_background_pink100"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="Tap to upload"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+    </ScrollView>
     <TextView
         android:id="@+id/postBt"
         android:layout_width="match_parent"

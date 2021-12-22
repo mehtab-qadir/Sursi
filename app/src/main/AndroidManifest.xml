@@ -19,8 +19,13 @@
         <activity
             android:name=".Activities.ThreadDetailActivity"
             android:exported="true" />
+        <activity android:name=".Activities.EditThread"
+            android:exported="true"/>
         <activity
             android:name=".Activities.HomeActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Fragments.NotificationsFragment"
             android:exported="true">
         </activity>
         <activity
